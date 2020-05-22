@@ -1,0 +1,39 @@
+Final Project Part 1:
+
+Problem 1:
+
+Dogs vs. Cats dataset will be used as image dataset which you can download from 
+www.kaggle.com/c/dogs-vs-cats/data. it contains 25,000 images of dogs and cats (12,500 from each 
+class). For your CNN you will be using only 4,000 pictures of cats and dogs (2,000 cats and 2,000 
+dogs). Split the set in the following wat: 2,000 pictures for training, 1,000 for validation and 
+1,000 for etsting.
+
+A) Download the original dataset and create a new one containing three subsets: a training set
+   with 1,400 samples of each class, a validation set with 400 samples of each class, and a test
+   set with 200 samples of each class (70%-20%-10%)
+B) Use Sequential model and build the topology of your CNN implementation augmentation by including
+   augmentation by including convolutional layers Conv2D (with ReLU activation), four MaxPooling2D
+   layers, a Dense layer of size 1 and a sigmoid activation as the number of class is two. Use
+   Adam optimizer.
+C) Display some randomly augnmented images (four images of two different cats and four images of
+   two different dogs).
+D) To avoid overfitting add Dropout layer and do the training of your CNN using data augmentation
+   generators. Plot training and validation accuracy as well as trainging and validation loss.
+E) Visualize every channel in every intermediate activations and explain why this is useful.
+F) Visualize convolutional filters: get the gradient of the loss with regard to the input, apply
+   stochastic gradient descent, include a code for filter visualizations and generate a grid of all
+   filter response patterns in a layer.
+
+Problem 2:
+Explore the implementation of CNN with a colored image dataset by your choice (not less than 4 
+classes, no less than 1000 images for each of the classes in the training set, no less than 300 
+images for each of the classes in the validaiton set, no less than 60 images for each of the classes 
+in the test set). Datasets as MNIST, CIFAR-10, CIFAR-100 or MNIST-like and CIFAR-like are excluded.
+Use dataset normalization. As the datasets are usually bigger than the specified figured above, you 
+can use only part of them as in dogs-vs-cats.
+
+A) Your CNN topology should include 4-5 convolutional layers, dropout layers, and at least 2 FC 
+   layers. Use ReLU activation function and run the classifier twice by using Adam and SGD with 
+   Nesterov momentum.
+B) Use shuffling, normalized minibatches, augmentation, address the problems of hyperparameter 
+initalization (use Glorot). Display visualization (c, e, f from Problem 1) for new dataset.
