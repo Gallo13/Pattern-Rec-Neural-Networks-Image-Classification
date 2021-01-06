@@ -1,4 +1,5 @@
 Problem 2:
 
+- used fruit dataset
 - .h5 file too large for github
   - included: fruit_classification_adam.h5 and fruit_classification_sgd.h5
